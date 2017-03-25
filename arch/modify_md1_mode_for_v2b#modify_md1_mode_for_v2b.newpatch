@@ -1,0 +1,22 @@
+@start
+@path arm64/configs/NX541J_defconfig
+@classname none
+@method none
+@action modifywc
+@code
+$
+CONFIG_MTK_MD1_SUPPORT=12
+$
+CONFIG_MTK_MD1_SUPPORT=11
+@end
+@start
+@path arm64/configs/NX541J_debug_defconfig
+@classname none
+@method none
+@action modifywc
+@code
+$
+CONFIG_MTK_MD1_SUPPORT=12
+$
+CONFIG_MTK_MD1_SUPPORT=11
+@end

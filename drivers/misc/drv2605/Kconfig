@@ -1,0 +1,10 @@
+config DRV2605
+	bool "TI DRV2605"
+	default n
+
+config FEATURE_ZTEMT_DRV2605_COMPATIBLE
+        bool "TI DRV2605 compatible with MTK PMIC Vibrator"
+        depends on DRV2605
+        default n
+        help
+         Compatible with MTK PMIC Vibrator

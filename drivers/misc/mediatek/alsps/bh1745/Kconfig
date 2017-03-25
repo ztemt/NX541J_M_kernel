@@ -1,0 +1,5 @@
+config MTK_ROHM_BH1745
+  bool "MTK_ROHM_BH1745"
+  help
+	  ALSPS sensor driverto detect ambint light and the object is close
+	  or far awary from device

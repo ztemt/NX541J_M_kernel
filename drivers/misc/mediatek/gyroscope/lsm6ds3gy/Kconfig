@@ -1,0 +1,10 @@
+
+config MTK_LSM6DS3GY
+        bool "BMI120 for MediaTek package"
+        default n
+        help
+        It support different gyroscope sensor.
+        If this option is set,
+	  	it will support
+         LSM6DS3 gyroscope.
+

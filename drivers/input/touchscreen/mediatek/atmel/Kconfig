@@ -1,0 +1,80 @@
+#
+# Atmel mXT I2C Touchscreen driver
+#
+
+config MXT_DEBUG_ENABLE
+	bool "Debug message"
+	depends on CONFIG_TOUCHSCREEN_MTK_ATMEL
+	default n
+	help
+	  This is the plugin manger
+
+	  Select here if you have a debug message
+
+config MXT_PLUGIN_SUPPORT
+	bool "Plugin manager"
+	depends on CONFIG_TOUCHSCREEN_MTK_ATMEL
+	default n
+	help
+	  This is the plugin manger
+
+	  Select here if you have a this plugin
+
+if MXT_PLUGIN_SUPPORT
+
+config MXT_PLIGIN_CAL
+	bool "Calibraion recovery support - (cal)"
+	depends on MXT_PLUGIN_SUPPORT
+	default n
+	help
+	  This is the calibraion plugin
+
+	  Select here if you have a this plugin
+
+config MXT_PLIGIN_AC
+	bool "Charger detect support - (ac)"
+	depends on MXT_PLUGIN_SUPPORT
+	default n
+	help
+	  This is the charger plugin
+
+	  Select here if you have a this plugin
+
+config MXT_PLIGIN_PI
+	bool "Alternative config support - (pi)"
+	depends on MXT_PLUGIN_SUPPORT
+	default n
+	help
+	  This is the alternative plugin
+
+	  Select here if you have a this plugin
+
+config MXT_PLIGIN_MISC
+	bool "Miscellaneous feature support - (misc)"
+	depends on MXT_PLUGIN_SUPPORT
+	default n
+	help
+	  This is the miscellaneous plugin
+
+	  Select here if you have a this plugin
+
+config MXT_PLIGIN_CLIP
+	bool "clip feature support - (clip)"
+	depends on MXT_PLUGIN_SUPPORT
+	default n
+	help
+	  This is the clip plugin
+
+	  Select here if you have a this plugin
+
+config MXT_PLIGIN_WDG
+	bool "Watch dog support - (wdg)"
+	depends on MXT_PLUGIN_SUPPORT
+	default n
+	help
+	  This is the watch dog plugin
+
+	  Select here if you have a this plugin
+endif
+
+
